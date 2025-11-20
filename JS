@@ -1,0 +1,54 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.header');
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('.nav');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Mobile Menu Toggle
+    mobileMenuBtn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        mobileMenuBtn.classList.toggle('active');
+        
+        // Animate hamburger
+        const bars = mobileMenuBtn.querySelectorAll('.bar');
+        if (nav.classList.contains('active')) {
+            bars[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+            bars[1].style.opacity = '0';
+            // Add a third bar dynamically if needed or just use CSS classes
+            // For simplicity, let's toggle a class on the button
+        } else {
+            bars[0].style.transform = 'none';
+            bars[1].style.opacity = '1';
+        }
+    });
+
+    // Close mobile menu when clicking a link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('active');
+            mobileMenuBtn.classList.remove('active');
+        });
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
