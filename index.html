@@ -1,37 +1,255 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Welcome to my Portfolio Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Thapa | Data Analyst & Team Lead</title>
+    <meta name="description"
+        content="Portfolio of Suraj Thapa, a Data Analyst and Team Lead with over 10 years of experience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- wp:group {"align":"full","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull"><!-- wp:cover {"url":"https://dotcompatterns.files.wordpress.com/2022/12/pexels-videos-2334654.mp4","id":9123,"dimRatio":10,"backgroundType":"video","minHeight":680,"contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|60","left":"var:preset|spacing|60"}}}} -->
-    <div class="wp-block-cover alignfull is-light" style="padding-right:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60);min-height:680px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-10 has-background-dim"></span><video class="wp-block-cover__video-background intrinsic-ignore" autoplay muted loop playsinline src="https://dotcompatterns.files.wordpress.com/2022/12/pexels-videos-2334654.mp4" data-object-fit="cover"></video><div class="wp-block-cover__inner-container"><!-- wp:columns {"isStackedOnMobile":false} -->
-    <div class="wp-block-columns is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center"} -->
-    <div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"layout":{"type":"flex"}} -->
-    <div class="wp-block-group"><!-- wp:site-logo {"width":60} /-->
-    
-    <!-- wp:site-title /--></div>
-    <!-- /wp:group --></div>
-    <!-- /wp:column -->
-    
-    <!-- wp:column {"verticalAlignment":"center"} -->
-    <div class="wp-block-column is-vertically-aligned-center"><!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} -->
-    <!-- wp:navigation-link {"label":"About","url":"#","isTopLevelLink":true} /-->
-    
-    <!-- wp:navigation-link {"label":"Home","url":"#","isTopLevelLink":true} /-->
-    
-    <!-- wp:navigation-link {"label":"Contact","url":"#","isTopLevelLink":true} /-->
-    <!-- /wp:navigation --></div>
-    <!-- /wp:column --></div>
-    <!-- /wp:columns -->
-    
-    <!-- wp:spacer {"height":"480px"} -->
-    <div style="height:480px" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer --></div></div>
-    <!-- /wp:cover --></div>
-    <!-- /wp:group -->
-<h1>My protfolio</h1>
-<p>My projects.</p>
+    <div class="background-gradient"></div>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Suraj<span class="accent">.</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">Suraj Thapa<span class="accent">.</span></h1>
+                <h2 class="hero-subtitle">Data Analyst & Team Lead</h2>
+                <p class="hero-desc">A passionate professional with over 10 years of experience in transforming data
+                    into insights and leading high-performing teams.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View Experience</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">35+</span>
+                        <span class="stat-label">Tours Managed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container about-container">
+                <div class="about-content">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-text">
+                        I am a dedicated and hardworking professional known for my exceptional people skills and strong
+                        work ethic.
+                        With a diverse background spanning <strong>Data Analysis</strong>, <strong>Team
+                            Leadership</strong>, and <strong>Video Editing</strong>,
+                        I bring a unique multidisciplinary perspective to every project.
+                    </p>
+                    <p class="about-text">
+                        Currently based in <strong>Kathmandu</strong>, I specialize in processing complex data, managing
+                        team operations, and ensuring operational efficiency.
+                        My journey has taken me from managing tours in the Himalayas to analyzing data for tech
+                        companies, always with a focus on efficiency and results.
+                    </p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">zinisraw@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Phone:</span>
+                            <span class="info-value">9813713585</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Kathmandu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section experience">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="timeline">
+                    <!-- Job 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Dec 2022 - June 2023</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Data Analyst</h3>
+                            <h4 class="timeline-company">Simjung PVT. LTD <span class="location">- Kathmandu</span></h4>
+                            <ul class="timeline-tasks">
+                                <li>Processed and cleaned complex datasets for analysis.</li>
+                                <li>Collaborated with the team to finalize data processing workflows.</li>
+                                <li>Sorted and analyzed data to derive actionable insights.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Job 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Oct 2019 - April 2021</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Data Entry Team Lead</h3>
+                            <h4 class="timeline-company">ABGS PVT. LTD <span class="location">- Kathmandu</span></h4>
+                            <ul class="timeline-tasks">
+                                <li>Led a team in data entry and segmentation for AI assistance projects.</li>
+                                <li>Worked individually and collaboratively to ensure data accuracy.</li>
+                                <li>Promoted to Team Leader due to exceptional performance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Job 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">Feb 2018 - April 2018</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Video Editor Intern</h3>
+                            <h4 class="timeline-company">Songs Nepal Pvt. Ltd. <span class="location">- Kathmandu</span>
+                            </h4>
+                            <ul class="timeline-tasks">
+                                <li>Edited and assisted with video production and assortment.</li>
+                                <li>Supported the company with various editing needs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Job 6 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">May 2012 - Dec 2016</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-role">Assistant Tour Manager</h3>
+                            <h4 class="timeline-company">Nepalaya Tours and Travel Pvt. Ltd <span class="location">-
+                                    Kathmandu</span></h4>
+                            <ul class="timeline-tasks">
+                                <li>Managed tour logistics and documentation.</li>
+                                <li>Successfully completed 35 tours while maintaining good customer relations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">📊</div>
+                        <h3 class="skill-name">Data Analysis</h3>
+                        <p class="skill-level">1 Year Experience</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">⌨️</div>
+                        <h3 class="skill-name">Data Entry</h3>
+                        <p class="skill-level">2 Years Experience</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">👥</div>
+                        <h3 class="skill-name">Team Leadership</h3>
+                        <p class="skill-level">2 Years Experience</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📈</div>
+                        <h3 class="skill-name">Data Visualization</h3>
+                        <p class="skill-level">1 Year Experience</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🎬</div>
+                        <h3 class="skill-name">Video Editing</h3>
+                        <p class="skill-level">1 Year Experience</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🎧</div>
+                        <h3 class="skill-name">Customer Service</h3>
+                        <p class="skill-level">1 Year Experience</p>
+                    </div>
+                </div>
+
+                <div class="languages-section">
+                    <h3 class="subsection-title">Languages</h3>
+                    <div class="languages-list">
+                        <span class="language-tag">Nepali (Fluent)</span>
+                        <span class="language-tag">Hindi (Expert)</span>
+                        <span class="language-tag">English (Expert)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="contact-text">
+                        I'm currently available for opportunities in Data Analysis, Team Leadership, or related fields.
+                        Feel free to reach out!
+                    </p>
+                    <div class="contact-actions">
+                        <a href="mailto:zinisraw@gmail.com" class="btn btn-primary">Email Me</a>
+                        <a href="tel:9813713585" class="btn btn-outline">Call Me</a>
+                    </div>
+
+                    <div class="footer-info">
+                        <p>Kathmandu, Nepal</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2024 Suraj Thapa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
